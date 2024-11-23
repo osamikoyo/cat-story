@@ -13,6 +13,7 @@ type Dependensis struct{
 
 func RegisterHandler(r *chi.Mux, deps Dependensis) {
 	r.Get("/", handlerErrRoute(Home))
+	r.Post("/add-story", handlerErrRoute(Add))
 	r.Get("/get-stories", handlerErrRoute(GetAll))
 
 	r.Handle("/assets/*", http.StripPrefix("/assets", http.FileServer(deps.AssetsFS)))
