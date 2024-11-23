@@ -1,0 +1,17 @@
+package home
+
+import "cat-story/internal/view/layout/base"
+
+templ HomePage() {
+    @base.BaseLay(base.Props{Title: "Home"}){
+        <center hx-boost="true">
+             <div id="stories-container">
+        <!-- Здесь будут отображаться истории -->
+            </div>
+
+            <a href="/get-stories" class="btn mt-10 btn-active btn-primary" >
+                Загрузить истории
+            </a>
+        </center>
+    }
+}

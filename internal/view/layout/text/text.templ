@@ -1,0 +1,9 @@
+package text
+
+type TextProps struct{
+    Text string
+}
+
+templ TextBaseTemplate(t TextProps) {
+    <h1>{t.Text}</h1>
+}

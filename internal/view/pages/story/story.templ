@@ -1,0 +1,21 @@
+package storypage
+
+import "cat-story/internal/view/layout/base"
+
+type StoryProps struct{
+    Name string
+    Text string
+    Date string
+}
+
+templ RandStory(s StoryProps) {
+    @base.BaseLay(base.Props{Title: "Get"}){
+        <center>
+            <div class="flex flex-col rounded-md bg-primary w-32 h-32 mt-10 text-black">
+                <p class="font-medium text-2xl text-black">{s.Name}</p>
+                <p class="text-black">{s.Text}</p>
+                <h5 class="text-black">{s.Date}</h5>
+            </div>
+        </center>
+    }
+}
