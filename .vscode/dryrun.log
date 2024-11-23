@@ -2,12 +2,10 @@ make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/osami/Документы/code/golang/cat-story'
 templ generate internal/view
 make build-js
- 
 make[1]: Entering directory '/home/osami/Документы/code/golang/cat-story'
 npm --prefix ./web run build:js
 make[1]: Leaving directory '/home/osami/Документы/code/golang/cat-story'
 make build-css
- 
 make[1]: Entering directory '/home/osami/Документы/code/golang/cat-story'
 npm --prefix ./web run build:css
 make[1]: Leaving directory '/home/osami/Документы/code/golang/cat-story'

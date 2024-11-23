@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Nov 23 10:51:49 2024
+# Make data base, printed on Sat Nov 23 11:27:22 2024
 
 # Variables
 
@@ -36,6 +38,8 @@ MAKE_COMMAND := make
 GTK3_MODULES = xapp-gtk3-module
 # environment
 QT_ACCESSIBILITY = 1
+# environment
+GOPATH = /home/osami/go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -109,7 +113,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 33646
+VSCODE_PID = 61560
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -183,6 +187,8 @@ RIDER_VM_OPTIONS = /home/osami/Загрузки/jetbra/vmoptions/rider.vmoptions
 # environment
 IDEA_VM_OPTIONS = /home/osami/Загрузки/jetbra/vmoptions/idea.vmoptions
 # environment
+GOTELEMETRY_GOPLS_CLIENT_START_TIME = 1724769344
+# environment
 INVOCATION_ID = d2670d69ae704d3fa2f2931823008088
 # environment
 SNAP_REVISION = 176
@@ -219,6 +225,8 @@ XDG_DATA_DIRS_VSCODE_SNAP_ORIG = /usr/share/ubuntu:/usr/share/gnome:/home/osami/
 # environment
 LOGNAME = osami
 # environment
+GOTELEMETRY_GOPLS_CLIENT_TOKEN = 561
+# environment
 GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
 SNAP_ARCH = amd64
@@ -243,7 +251,7 @@ MANAGERPID = 3667
 # environment
 DEBUGINFOD_URLS = https://debuginfod.ubuntu.com 
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 33600
+GIO_LAUNCHED_DESKTOP_FILE_PID = 61514
 # environment
 PAGER = less
 # environment
@@ -265,9 +273,12 @@ GIO_MODULE_DIR = /home/osami/snap/code/common/.cache/gio-modules
 # environment
 JOURNAL_STREAM = 8:25192
 # environment
+GOMODCACHE = /home/osami/go/pkg/mod
+# environment
 XDG_SESSION_CLASS = user
 # environment
 GSM_SKIP_SSH_AGENT_WORKAROUND = true
+ 
 # environment
 HOME = /home/osami
 # environment
@@ -276,15 +287,14 @@ QT_IM_MODULE = ibus
 ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-cdb0eac1-1.95-main.sock
- 
-make: *** No rule to make target 'all'.  Stop.
-
 # environment
 GTK_EXE_PREFIX = /snap/code/176/usr
 # environment
 SNAP_NAME = code
 # environment
 GSETTINGS_SCHEMA_DIR = /home/osami/snap/code/176/.local/share/glib-2.0/schemas
+# environment
+GOPROXY = https://proxy.golang.org,direct
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -314,7 +324,7 @@ GDMSESSION = ubuntu
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=150/1024=15%, Rehash=0, Collisions=7/180=4%
+# Load=155/1024=15%, Rehash=0, Collisions=9/185=5%
 
 # Pattern-specific Variable Values
 
@@ -322,9 +332,9 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2050, inode 9311503): 16 files, no impossibilities.
+# . (device 2050, inode 9311503): 17 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -392,12 +402,12 @@ build-css:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 25 / storage = 189 B / avg = 7 B
-# current buf: size = 8162 B / used = 189 B / count = 25 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 194 B / avg = 7 B
+# current buf: size = 8162 B / used = 194 B / count = 26 / avg = 7 B
 
-# strcache performance: lookups = 33 / hit rate = 24%
+# strcache performance: lookups = 34 / hit rate = 23%
 # hash-table stats:
-# Load=25/8192=0%, Rehash=0, Collisions=0/33=0%
-# Finished Make data base on Sat Nov 23 10:51:49 2024
+# Load=26/8192=0%, Rehash=0, Collisions=0/34=0%
+# Finished Make data base on Sat Nov 23 11:27:22 2024
 
  
